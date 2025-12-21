@@ -20,15 +20,16 @@ print(f"{x}*{y}={x*y}")
 print(f"{x}/{y}={x/y}")
 
 #(6)
-number_of_days=int(input("Enter the number of days ! "))
-print(f"The seconds in {number_of_days} is {24*60*60}")
+#number_of_days=int(input("Enter the number of days ! "))
+#print(f"The seconds in {number_of_days} is {24*60*60}")
 
 #(7)
 total_number=int(input("Enter the total number of students ! "))
 class_capacity=int(input("Enter the class capacity ! "))
+
 number_of_classes=total_number//class_capacity
-number_of_classes +=(number_of_classes)%2
-number_of_classes+=number_of_classes&1
+number_of_classes+=(total_number//class_capacity) < (total_number/class_capacity)
+
 print(number_of_classes)
 
 
